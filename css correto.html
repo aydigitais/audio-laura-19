@@ -1,29 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.6.3.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="00:00:00"/>
-	<style type="text/css">
-		@page { size: 8.5in 11in; margin: 0.79in }
-		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
-		pre { background: transparent }
-		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
-		pre.cjk { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 10pt }
-		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
-	</style>
-</head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;title&gt;Áudio&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.plyr.io/3.6.7/plyr.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css&quot;&gt;
-  &lt;style&gt;
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap');
+  <meta charset="UTF-8">
+  <title>Áudio</title>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
       
     body {
       height: 100vh;
@@ -120,7 +103,7 @@
     }
 
     .plyr__time+.plyr__time:before {
-      content: &quot;&quot;;
+      content: "";
       margin-right: var(--plyr-control-spacing);
     }
 
@@ -129,21 +112,21 @@
       display: none;
     }
 
-  &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div class=&quot;audio-container&quot; id=&quot;audioContainer&quot;&gt;
-    &lt;!-- Cole o link do Seu áudio Abaixo--&gt;
-    &lt;audio class=&quot;plyr&quot; src=&quot;LINK-DO-SEU-ÁUDIO&quot;&gt;&lt;/audio&gt;
-    &lt;!-- Cole o link da Sua imagem Abaixo--&gt;
-    &lt;img src=&quot;https://i.imgur.com/cknxSJf.png&quot; alt=&quot;Imagem&quot;&gt;
-    &lt;div class=&quot;microphone-icon&quot;&gt;
-      &lt;i class=&quot;fas fa-microphone&quot;&gt;&lt;/i&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+  </style>
+</head>
+<body>
+  <div class="audio-container" id="audioContainer">
+    <!-- Cole o link do Seu áudio Abaixo-->
+    <audio class="plyr" src="https://s3.fr-par.scw.cloud/typebot/public/typebots/xofdr3kp80jvcu1lthv3e9zt/blocks/p84a7mxo9gratngsrgid9e8m?v=1690232181053"></audio>
+    <!-- Cole o link da Sua imagem Abaixo-->
+    <img src="https://i.postimg.cc/nhg9sL0x/DR-LAURA-MILLANI.png" alt="Imagem">
+    <div class="microphone-icon">
+      <i class="fas fa-microphone"></i>
+    </div>
+  </div>
   
-  &lt;script src=&quot;https://cdn.plyr.io/3.6.7/plyr.js&quot;&gt;&lt;/script&gt;
-  &lt;script&gt;
+  <script src="https://cdn.plyr.io/3.6.7/plyr.js"></script>
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
       const player = new Plyr('.plyr', {
         controls: ['play', 'progress', 'current-time', 'duration']
@@ -171,25 +154,23 @@
 
       const audioContainer = document.getElementById('audioContainer');
       audioContainer.addEventListener('click', function() {
-        const playButton = audioContainer.querySelector('.plyr__controls button[data-plyr=&quot;play&quot;]');
+        const playButton = audioContainer.querySelector('.plyr__controls button[data-plyr="play"]');
         playButton.click();
       });
 
-      const playPauseButton = document.getElementById('audioContainer').querySelector('.plyr__controls button[data-plyr=&quot;play&quot;]');
+      const playPauseButton = document.getElementById('audioContainer').querySelector('.plyr__controls button[data-plyr="play"]');
       const audioBox = document.querySelector('.audio-box');
       playPauseButton.addEventListener('click', function() {
-        const playButton = audioContainer.querySelector('.plyr__controls button[data-plyr=&quot;play&quot;]');
+        const playButton = audioContainer.querySelector('.plyr__controls button[data-plyr="play"]');
         playButton.click();
       });
 
       audioBox.addEventListener('click', function(event) {
         event.stopPropagation(); 
-        const playButton = audioContainer.querySelector('.plyr__controls button[data-plyr=&quot;play&quot;]');
+        const playButton = audioContainer.querySelector('.plyr__controls button[data-plyr="play"]');
         playButton.click();
       });
     });
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre>
+  </script>
 </body>
 </html>
